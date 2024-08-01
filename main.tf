@@ -192,7 +192,7 @@ resource "aws_db_instance" "default" {
   db_name              = "mydb"
   engine               = "mysql"
   engine_version       = "8.0.35"
-  instance_class       = "db.t3.micro"
+  instance_class       = "db.t2.micro"
   username             = "admin"
   password             = "Raham#123568i"
   skip_final_snapshot  = true
@@ -348,8 +348,6 @@ resource "aws_lb_listener" "external-elb" {
 }
 
 
-
-
 output "lb_dns_name" {
   description = "The DNS name of the load balancer"
   value       = aws_lb.external-elb.dns_name
@@ -357,10 +355,10 @@ output "lb_dns_name" {
 
 
 resource "aws_s3_bucket" "example" {
-  bucket = "rahamtestbycketterra1757abcdefxxcabhi"
+  bucket = "anirudhthreetierbucket"
 
   tags = {
-    Name        = "rahamtestbycketterra1757abcdefxxcabhi"
+    Name        = "anirudhthreetierbucket"
     Environment = "Dev"
   }
 }
