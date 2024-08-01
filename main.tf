@@ -134,7 +134,7 @@ resource "aws_route_table_association" "b" {
 
 #Create EC2 Instance
 resource "aws_instance" "webserver1" {
-  ami                    = "ami-024ebc7de0fc64e44"
+  ami                    = "ami-03972092c42e8c0ca"
   instance_type          = "t2.micro"
   availability_zone      = "us-east-2a"
   key_name               = "apr6pm"
@@ -148,7 +148,7 @@ resource "aws_instance" "webserver1" {
 }
 
 resource "aws_instance" "webserver2" {
-  ami                    = "ami-024ebc7de0fc64e44"
+  ami                    = "ami-03972092c42e8c0ca"
   instance_type          = "t2.micro"
   availability_zone      = "us-east-2b"
   key_name               = "apr6pm"
@@ -163,7 +163,7 @@ resource "aws_instance" "webserver2" {
 
 #Create EC2 Instance
 resource "aws_instance" "appserver1" {
-  ami                    = "ami-024ebc7de0fc64e44"
+  ami                    = "ami-03972092c42e8c0ca"
   instance_type          = "t2.micro"
   availability_zone      = "us-east-2a"
   key_name               = "apr6pm"
@@ -175,7 +175,7 @@ resource "aws_instance" "appserver1" {
 }
 
 resource "aws_instance" "appserver2" {
-  ami                    = "ami-024ebc7de0fc64e44"
+  ami                    = "ami-03972092c42e8c0ca"
   instance_type          = "t2.micro"
   availability_zone      = "us-east-2b"
   key_name               = "apr6pm"
